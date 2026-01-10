@@ -20,6 +20,19 @@ header {
     gap: 20px;
 }
 
+.quick-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.quick-links .card {
+    font-size: 14px;
+    padding: 12px;
+}
+
+
 .card {
     display: block;
     padding: 20px;
