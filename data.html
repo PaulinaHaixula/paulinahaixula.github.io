@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paulina Haixula | Data Scientist</title>
+
+<style>
+
+/* GLOBAL */
+body{
+    margin:0;
+    font-family:"Segoe UI",Arial,sans-serif;
+    background:#ffffff;
+    color:#2b2b2b;
+    line-height:1.7;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+h2{
+    margin-bottom:20px;
+    border-bottom:3px solid #dbcfc3;
+    padding-bottom:6px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* HEADER */
+header{
+    background:#ffffff;
+    border-bottom:1px solid #eee;
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:1.6em;
+    font-weight:700;
+}
+
+nav a{
+    margin-left:25px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#8f8174;
+}
+
+/* HERO */
+.hero{
+    background:#f7f6f4;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:2.8em;
+}
+
+.hero p{
+    font-size:1.2em;
+    max-width:700px;
+    margin:20px auto;
+}
+
+/* SECTIONS */
+section{
+    margin:60px 0;
+}
+
+.section-box{
+    background:#ffffff;
+    border:1px solid #eee;
+    border-radius:14px;
+    padding:35px;
+}
+
+/* ABOUT */
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+/* PROFICIENCIES */
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    text-align:center;
+    border:1px solid #eee;
+    border-radius:12px;
+    padding:25px;
+}
+
+.skill-card img{
+    width:60px;
+    margin-bottom:15px;
+}
+
+/* EXPERIENCE */
+.exp-list li{
+    margin-bottom:8px;
+}
+
+/* PROJECTS */
+.project{
+    margin-bottom:50px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:15px;
+}
+
+.img-box{
+    background:#f1edea;
+    height:180px;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#777;
+    border:1px solid #dbcfc3;
+}
+
+/* CONTACT */
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+input,textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+button{
+    background:#dbcfc3;
+    border:none;
+    padding:12px 25px;
+    border-radius:6px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#cbbdb0;
+}
+
+/* FOOTER */
+footer{
+    background:#f4f2ef;
+    text-align:center;
+    padding:25px;
+    font-size:0.9em;
+    border-top:1px solid #eee;
+}
+
+@media(max-width:768px){
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+<div class="navbar">
+<div class="logo">Paulina Haixula</div>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Proficiencies</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<h1>Data Scientist & AI Researcher</h1>
+<p>Transforming data into strategic insights through analytics, machine learning, and research-driven solutions.</p>
+<p>Windhoek, Namibia | psndalipo@gmail.com | +264 81 440 7873</p>
+</section>
+
+<div class="container">
+
+<!-- ABOUT -->
+<section id="about">
+<div class="section-box">
+<h2>About Me</h2>
+<div class="about-grid">
+<div>
+<p>Data Analyst and Scientist with strong expertise in transforming data into meaningful information for decision-making.</p>
+<p>Skilled in data storytelling, business analytics, and cross-functional collaboration.</p>
+</div>
+<div>
+<h3>Education</h3>
+<ul>
+<li>B-Tech Electrical Engineering – CPUT (2013)</li>
+<li>Master of Data Science – NUST (2024–2025)</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<div class="section-box">
+<h2>Proficiencies</h2>
+<div class="skills">
+
+<div class="skill-card">
+<img src="icons/python.png">
+<h4>Programming</h4>
+<p>Python, Julia, C, SQL, Scala for analytics and automation.</p>
+</div>
+
+<div class="skill-card">
+<img src="icons/bigdata.png">
+<h4>Big Data</h4>
+<p>Hadoop, Kafka, Spark for large-scale processing.</p>
+</div>
+
+<div class="skill-card">
+<img src="icons/ml.png">
+<h4>Machine Learning</h4>
+<p>AI modeling, tuning, and deployment.</p>
+</div>
+
+<div class="skill-card">
+<img src="icons/viz.png">
+<h4>Visualization</h4>
+<p>Tableau, Grafana, dashboards & reports.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<div class="section-box">
+<h2>Professional Experience</h2>
+<ul class="exp-list">
+<li>Managed data pipelines and architecture.</li>
+<li>Established data collection and validation processes.</li>
+<li>Developed dashboards and reports.</li>
+<li>Delivered actionable business insights.</li>
+<li>Automated reporting workflows.</li>
+<li>Improved data accuracy and adoption.</li>
+<li>Collaborated with cross-functional teams.</li>
+</ul>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<div class="section-box">
+<h2>Key Projects</h2>
+
+<div class="project">
+<h3>1. Cape Town Rainfall Dashboard</h3>
+<p>Rainfall pattern visualization and analysis.</p>
+<div class="project-grid">
+<div class="img-box">Place image: projects/rain1.jpg</div>
+<div class="img-box">Place image: projects/rain2.jpg</div>
+<div class="img-box">Place image: projects/rain3.jpg</div>
+</div>
+</div>
+
+<div class="project">
+<h3>2. AI Hair Assistant</h3>
+<p>AI-driven hair care recommendation system.</p>
+<div class="project-grid">
+<div class="img-box">projects/hair1.jpg</div>
+<div class="img-box">projects/hair2.jpg</div>
+<div class="img-box">projects/hair3.jpg</div>
+</div>
+</div>~
+
+<div class="project">
+<h3>3. Hair Survey & EDA</h3>
+<p>Exploratory analysis and classification.</p>
+<div class="project-grid">
+<div class="img-box">projects/eda1.jpg</div>
+<div class="img-box">projects/eda2.jpg</div>
+<div class="img-box">projects/eda3.jpg</div>
+</div>
+</div>
+
+<h3>Research Findings: Hair Loss & Condition Analysis</h3>
+<p>Early-stage breakage was most common. Black/African participants showed higher structural compromise.</p>
+<p>Mixed-race participants demonstrated the highest damage levels.</p>
+<div class="project-grid">
+<div class="img-box">projects/research1.jpg</div>
+<div class="img-box">projects/research2.jpg</div>
+<div class="img-box">projects/research3.jpg</div>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="section-box">
+<h2>Contact Me</h2>
+<div class="contact-grid">
+
+<div>
+<h3>Email Me</h3>
+<form action="mailto:psndalipo@gmail.com" method="post" enctype="text/plain">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Email</button>
+</form>
+</div>
+
+<div>
+<h3>WhatsApp</h3>
+<p>You can also contact me directly via WhatsApp:</p>
+<a href="https://wa.me/264814407873" target="_blank">
+<button>Chat on WhatsApp</button>
+</a>
+</div>
+
+</div>
+</div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Paulina Haixula | Data Science Portfolio</p>
+</footer>
+
+</body>
+</html>
