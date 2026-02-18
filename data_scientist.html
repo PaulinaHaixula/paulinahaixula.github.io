@@ -10,28 +10,41 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    background: #f7f4f1;
+    background: #f7fbff; /* light blue background */
     color: #2b2b2c;
-    line-height: 1.8;
+    line-height: 1.7;
 }
 
 /* HEADER */
 header {
-    background: #5e554d;
+    background: #4f86c6; /* nude to blue blend */
     color: #ffffff;
-    padding: 70px 20px;
-    text-align: center;
+    padding: 30px 40px;
 }
 
-header h1 {
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-left h1 {
     margin: 0;
-    font-size: 2.8em;
-    letter-spacing: 1px;
+    font-size: 2.2em;
 }
 
-header p {
-    font-size: 1.1em;
-    opacity: 0.95;
+.header-left p {
+    margin: 5px 0;
+}
+
+.header-right a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 /* CONTAINER */
@@ -41,206 +54,276 @@ header p {
     padding: 40px 20px;
 }
 
-/* QUICK LINKS */
-.quick-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    margin: 40px 0;
-}
-
-.quick-links a {
-    background: #dbcfc3;
-    color: #2b2b2b;
-    padding: 12px 22px;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: 1px solid #b8a99b;
-}
-
-.quick-links a:hover {
-    background: #cbbdb0;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-}
-
 /* SECTIONS */
 section {
     background: #ffffff;
-    padding: 40px;
-    margin: 40px 0;
-    border-radius: 18px;
-    border: 1px solid #ece6e1;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-    transition: all 0.3s ease;
-}
-
-section:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 14px 32px rgba(0,0,0,0.08);
+    padding: 35px;
+    margin: 35px 0;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
 }
 
 /* HEADINGS */
 h2 {
-    color: #5e554d;
-    border-left: 6px solid #dbcfc3;
-    padding-left: 14px;
-    margin-bottom: 25px;
-    font-size: 1.6em;
+    color: #3a6ea5;
+    border-left: 6px solid #9ec9f2;
+    padding-left: 12px;
+    margin-bottom: 20px;
 }
 
 h3 {
-    color: #75685d;
-    margin-top: 30px;
-    font-size: 1.2em;
+    color: #5b7fa6;
+    margin-top: 25px;
 }
 
-/* TEXT */
-p {
-    margin-bottom: 15px;
+/* ABOUT */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: center;
 }
 
-/* LISTS */
-ul {
-    padding-left: 22px;
+.about img {
+    width: 100%;
+    border-radius: 12px;
 }
 
-li {
-    margin-bottom: 8px;
+/* PROFICIENCIES */
+.proficiency-text {
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.proficiencies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.prof-box {
+    background: #f2f8ff;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+    border: 1px solid #cfe4fa;
+}
+
+.prof-box img {
+    width: 50px;
+    margin-bottom: 10px;
 }
 
 /* GRID */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+    gap: 18px;
+    margin-top: 15px;
 }
 
 /* IMAGE BOX */
 .img-box {
-    background: #f1edea;
+    background: #eef6ff;
     height: 180px;
-    border-radius: 12px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #6e6258;
+    color: #5a7da0;
     font-size: 0.9em;
-    border: 1px solid #dbcfc3;
-    transition: all 0.3s ease;
+    border: 1px solid #cfe4fa;
 }
 
-.img-box:hover {
-    background: #e5ded8;
-    transform: scale(1.02);
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* EXPERIENCE */
+.experience ul {
+    columns: 2;
+}
+
+/* CONTACT */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #cfe4fa;
+}
+
+.contact-form button {
+    background: #4f86c6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* WHATSAPP BOX */
+.whatsapp-box {
+    background: #e6f7f1;
+    border: 1px solid #25D366;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.whatsapp-box a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #25D366;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 /* FOOTER */
 footer {
-    background: #8f8174;
+    background: #3a6ea5;
     color: #ffffff;
     text-align: center;
-    padding: 30px;
-    margin-top: 60px;
-    font-size: 0.9em;
+    padding: 25px;
+    margin-top: 50px;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
-  <h1>Paulina Haixula</h1>
-  <p>Data Scientist | AI & ML Researcher | Data Analyst</p>
-  <p>Windhoek, Namibia | psndalipo@gmail.com | +264 81 440 7873</p>
+<div class="header-content">
+
+<div class="header-left">
+<h1>Paulina Haixula</h1>
+<p>Data Scientist | AI & ML Researcher | Data Analyst</p>
+<p>Windhoek, Namibia | psndalipo@gmail.com | +264 81 440 7873</p>
+</div>
+
+<div class="header-right">
+<a href="#about">About</a>
+<a href="#skills">Proficiencies</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
 </header>
 
 <div class="container">
 
-<div class="quick-links">
-  <a href="index.html">⬅ Home</a>
-  <a href="assets/Angel_Paulina_CV.pdf">📄 Download CV</a>
-  <a href="https://github.com/yourusername">💻 GitHub</a>
-  <a href="https://linkedin.com/in/yourprofile">🔗 LinkedIn</a>
-</div>
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<div class="about">
 
-<section>
-<h2>Professional Summary</h2>
+<img src="images/profile.jpg" alt="Profile Photo">
+
+<div>
 <p>
 Data Analyst and Scientist with strong expertise in transforming data into meaningful information
-to help with decision-making. Experienced in managing data quality, building analytical models,
-and delivering meaningful dashboards.
+for informed decision-making. Experienced in managing data quality, building analytical models,
+and delivering impactful dashboards.
 </p>
 <p>
-Skilled in data storytelling, business analytics, and multi-functional collaboration to improve
-operational effectiveness. An ability to integrate technical analytics with business
-understanding using data governance standards.
+Skilled in data storytelling, business analytics, and cross-functional collaboration to improve
+operational effectiveness.
 </p>
+</div>
+
+</div>
 </section>
 
-<section>
-<h2>Education</h2>
+<!-- EXPERIENCE -->
+<section class="experience">
+<h2>Professional Experience</h2>
 <ul>
-<li><strong>B-Tech Electrical Engineering</strong> – CPUT, 2013</li>
-<li><strong>Master of Data Science</strong> – NUST, 2024–2025</li>
+<li>Managed data pipelines and architecture</li>
+<li>Established data collection and validation processes</li>
+<li>Developed dashboards and reports</li>
+<li>Audited datasets for quality and trends</li>
+<li>Delivered actionable insights to management</li>
+<li>Ensured secure and compliant data usage</li>
+<li>Maintained reporting documentation</li>
+<li>Trained business users</li>
+<li>Reduced ad-hoc Excel reporting</li>
+<li>Automated reporting workflows</li>
+<li>Improved time-to-insight and accuracy</li>
+<li>Collaborated with technical teams</li>
 </ul>
 </section>
 
-<section>
-<h2>Technical Skills</h2>
-<ul>
-<li>Programming: Python, Julia, C, SQL, Scala</li>
-<li>Big Data: Hadoop, Kafka, Spark</li>
-<li>Visualization: Tableau, Grafana</li>
-<li>Databases: MySQL</li>
-<li>Machine Learning, AI Modelling and tuning</li>
-<li>Data Quality & Validation</li>
-<li>Automation & Web Mining (Selenium)</li>
-<li>Data collection and cleaning</li>
-<li>Feature Engineerin and optimization</li>
-<li>Microsoft Office Suite</li>
-</ul>
+<!-- PROFICIENCIES -->
+<section id="skills">
+<h2>Proficiencies</h2>
+
+<p class="proficiency-text">
+I can optimize your data for better results, informed decisions and cost savings. My proficiency
+in SQL, Python, HTML, CSS, Power BI, Tableau, Hadoop, Kafka, Scala, batch processing and multiprocessing,
+combined with strong soft skills, enables me to deliver impactful data solutions.
+</p>
+
+<div class="proficiencies">
+
+<div class="prof-box">
+<img src="icons/analysis.png">
+<h3>Data Analysis</h3>
+<p>Uncover hidden insights, trends and anomalies for data-driven decisions.</p>
+</div>
+
+<div class="prof-box">
+<img src="icons/analytics.png">
+<h3>Data Analytics</h3>
+<p>Build predictive models and machine learning solutions.</p>
+</div>
+
+<div class="prof-box">
+<img src="icons/visual.png">
+<h3>Data Visualization</h3>
+<p>Create dashboards and reports for clear communication.</p>
+</div>
+
+<div class="prof-box">
+<img src="icons/write.png">
+<h3>Technical Writing</h3>
+<p>Develop clear documentation and reports.</p>
+</div>
+
+<div class="prof-box">
+<img src="icons/web.png">
+<h3>Web Development</h3>
+<p>Design data-driven and intuitive interfaces.</p>
+</div>
+
+<div class="prof-box">
+<img src="icons/team.png">
+<h3>Collaboration</h3>
+<p>Work seamlessly with teams to deliver solutions.</p>
+</div>
+
+</div>
 </section>
 
-<section>
-<h2>Training & Certifications</h2>
-<ul>
-<li>Global Leadership Summit (2019)</li>
-<li>First Aid Class A – EMTSS (March 2024)</li>
-<li>PCB Training Course (April 2015)</li>
-</ul>
-</section>
-
-<section>
-<h2>Professional Experience – Data Scientist / Data Analyst</h2>
-<ul>
-<li>Managed data pipelines and architecture to ensure integrity, reliability, and accessibility.</li>
-<li>Established processes for data collection, cleansing, and validation.</li>
-<li>Developed and enhanced dashboards and reports to support business decisions.</li>
-<li>Audited datasets to identify trends, anomalies, and quality issues.</li>
-<li>Analysed complex datasets and delivered actionable insights to management.</li>
-<li>Supported data governance initiatives and ensured secure data usage.</li>
-<li>Maintained documentation on data sources, definitions, and reporting standards.</li>
-<li>Trained business users on data tools and report interpretation.</li>
-<li>Drove adoption of MIS/BI systems and reduced ad-hoc Excel reporting.</li>
-<li>Developed in-house training materials.</li>
-<li>Automated manual reporting and data transformation processes.</li>
-<li>Improved time-to-insight, data accuracy, and dashboard adoption.</li>
-<li>Collaborated with cross-functional technical and business teams.</li>
-</ul>
-</section>
-
-<section>
+<!-- PROJECTS -->
+<section id="projects">
 <h2>Key Projects</h2>
 
 <h3>1. Cape Town Rainfall Analysis Dashboard</h3>
-<p>Data collection and visualization for rainfall pattern analysis.</p>
 <div class="grid">
 <div class="img-box">Rainfall Image 1</div>
 <div class="img-box">Rainfall Image 2</div>
@@ -248,7 +331,6 @@ understanding using data governance standards.
 </div>
 
 <h3>2. AI Hair Assistant Recommender System</h3>
-<p>Developed an AI-driven personalization system for hair care recommendations.</p>
 <div class="grid">
 <div class="img-box">AI Hair Image 1</div>
 <div class="img-box">AI Hair Image 2</div>
@@ -256,14 +338,12 @@ understanding using data governance standards.
 </div>
 
 <h3>3. Neighborhood Watch Surveillance Web App</h3>
-<p>Designed a community surveillance and alert platform using data analytics.</p>
 <div class="grid">
 <div class="img-box">Surveillance Image 1</div>
 <div class="img-box">Surveillance Image 2</div>
 </div>
 
 <h3>4. Hair Survey Data Collection & EDA</h3>
-<p>Performed data collection, exploratory analysis, and classification of hair conditions.</p>
 <div class="grid">
 <div class="img-box">EDA Analysis 1</div>
 <div class="img-box">EDA Analysis 2</div>
@@ -271,51 +351,46 @@ understanding using data governance standards.
 </div>
 </section>
 
+<!-- RESEARCH -->
 <section>
-<h2>Research Findings: Hair Loss & Condition Analysis</h2>
+<h2>Research Findings</h2>
 <p>
-Early-stage breakage (Class 1 and Class 2) was the most common outcome across all race groups.
-Black/African participants showed higher structural compromise, consistent with trichological
-studies indicating irregular cuticle layers.
+Early-stage breakage was most common. Black/African participants showed higher structural compromise.
+White participants showed highest dry hair proportion, while Mixed-race participants had highest damage.
 </p>
-<p>
-White participants exhibited the highest proportion of dry hair (53.1%) but least damage.
-Asian participants showed moderate healthy hair levels. Black/African participants had higher
-damage (9.1%), reflecting hair fragility. Mixed-race participants demonstrated the highest
-damage levels (28.6%).
-</p>
-<div class="grid">
-<div class="img-box">Hair Classification Image</div>
-<div class="img-box">Condition Comparison Chart</div>
-<div class="img-box">Damage Analysis Plot</div>
+</section>
+
+<!-- EDUCATION -->
+<section>
+<h2>Education</h2>
+<ul>
+<li>B-Tech Electrical Engineering – CPUT, 2013</li>
+<li>Master of Data Science – NUST, 2024–2025</li>
+</ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact Me</h2>
+
+<div class="contact-grid">
+
+<div class="contact-form">
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
 </div>
-</section>
 
-<section>
-<h2>Value to Employers</h2>
-<ul>
-<li>Transforms complex datasets into strategic insights</li>
-<li>Bridges engineering expertise with AI innovation</li>
-<li>Delivers scalable, ethical, and reliable analytics solutions</li>
-<li>Strong research and leadership mindset</li>
-</ul>
-<p><strong>Target Roles:</strong> Data Scientist, Machine Learning Engineer, AI Research Assistant</p>
-</section>
+<div class="whatsapp-box">
+<h3>Chat on WhatsApp</h3>
+<p>Get quick responses via WhatsApp</p>
+<a href="https://wa.me/264814407873" target="_blank">Message Me</a>
+</div>
 
-<section>
-<h2>References</h2>
-<ul>
-<li>
-<strong>Mr E. Victor (Sat-Com)</strong><br>
-☎ +264 81 354 6598<br>
-✉ erikson.victor@sat.com.na
-</li>
-<li>
-<strong>Mr S. Nambahu (NUST)</strong><br>
-☎ +264 81 200 5337<br>
-✉ nshoopala@nust.na
-</li>
-</ul>
+</div>
 </section>
 
 </div>
