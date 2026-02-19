@@ -3,13 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Paulina Haixula | Data Scientist</title>
 
 <style>
 
-/* ================= GLOBAL ================= */
-
+/* GLOBAL */
 body{
     margin:0;
     font-family:"Segoe UI",Arial,sans-serif;
@@ -35,8 +33,7 @@ h2{
     padding:40px 20px;
 }
 
-/* ================= HEADER ================= */
-
+/* HEADER */
 header{
     background:#ffffff;
     border-bottom:1px solid #eee;
@@ -65,8 +62,7 @@ nav a:hover{
     color:#8f8174;
 }
 
-/* ================= HERO ================= */
-
+/* HERO */
 .hero{
     background:#f7f6f4;
     text-align:center;
@@ -83,8 +79,7 @@ nav a:hover{
     margin:20px auto;
 }
 
-/* ================= SECTIONS ================= */
-
+/* SECTIONS */
 section{
     margin:60px 0;
 }
@@ -96,50 +91,61 @@ section{
     padding:35px;
 }
 
-/* ================= ABOUT ================= */
-
+/* ABOUT */
 .about-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:30px;
 }
 
-/* ================= SKILLS ================= */
-
+/* PROFICIENCIES */
 .skills{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:25px;
 }
 
-.skill-card{
-    text-align:center;
-    border:1px solid #eee;
-    border-radius:12px;
-    padding:25px;
-    transition:0.3s;
-}
-
-.skill-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
 .skill-icons{
-    display:flex;
-    justify-content:center;
-    gap:10px;
-    flex-wrap:wrap;
-    margin-bottom:15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 
 .skill-icons img{
-    width:35px;
-    height:35px;
+    width: 35px;
+    height: 35px;
 }
 
-/* ================= PROJECTS ================= */
+.skill-footer{
+    margin-top:15px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    justify-content:center;
+}
 
+.skill-footer button{
+    background:#f4f2ef;
+    border:1px solid #dbcfc3;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:0.85em;
+    cursor:default;
+    transition:0.2s ease;
+}
+
+.skill-footer button:hover{
+    background:#dbcfc3;
+}
+
+/* EXPERIENCE */
+.exp-list li{
+    margin-bottom:8px;
+}
+
+/* PROJECTS */
 .project{
     margin-bottom:50px;
 }
@@ -152,31 +158,17 @@ section{
 }
 
 .img-box{
+    background:#f1edea;
     height:180px;
     border-radius:10px;
-    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#777;
     border:1px solid #dbcfc3;
 }
 
-.img-box img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:0.3s;
-}
-
-.img-box img:hover{
-    transform:scale(1.1);
-}
-
-/* ================= EXPERIENCE ================= */
-
-.exp-list li{
-    margin-bottom:8px;
-}
-
-/* ================= CONTACT ================= */
-
+/* CONTACT */
 .contact-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -221,8 +213,7 @@ button:hover{
     color:white;
 }
 
-/* ================= FOOTER ================= */
-
+/* FOOTER */
 footer{
     background:#f4f2ef;
     text-align:center;
@@ -231,28 +222,21 @@ footer{
     border-top:1px solid #eee;
 }
 
-/* ================= MOBILE ================= */
-
 @media(max-width:768px){
-
     .about-grid,
     .contact-grid{
         grid-template-columns:1fr;
     }
-
 }
 
 </style>
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
-
+<!-- HEADER -->
 <header>
 <div class="navbar">
-
 <div class="logo">Paulina Haixula</div>
-
 <nav>
 <a href="#about">About</a>
 <a href="#skills">Proficiencies</a>
@@ -260,323 +244,181 @@ footer{
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
 </nav>
-
 </div>
 </header>
 
-<!-- ================= HERO ================= -->
-
+<!-- HERO -->
 <section class="hero">
-
 <h1>Data Scientist & AI Researcher</h1>
-
-<p>
-Transforming data into strategic insights through analytics,
-machine learning, and research-driven solutions.
-</p>
-
-<p>
-Windhoek, Namibia | psndalipo@gmail.com | +264 81 440 7873
-</p>
-
+<p>Transforming data into strategic insights through analytics, machine learning, and research-driven solutions.</p>
+<p>Windhoek, Namibia | psndalipo@gmail.com | +264 81 440 7873</p>
 </section>
 
 <div class="container">
 
-<!-- ================= ABOUT ================= -->
-
+<!-- ABOUT -->
 <section id="about">
-
 <div class="section-box">
-
 <h2>About Me</h2>
-
 <div class="about-grid">
-
 <div>
-
-<p>
-Data Analyst and Scientist with strong expertise in transforming
-data into meaningful information for decision-making.
-</p>
-
-<p>
-Skilled in data storytelling, business analytics,
-and cross-functional collaboration.
-</p>
-
+<p>Data Analyst and Scientist with strong expertise in transforming data into meaningful information for decision-making.</p>
+<p>Skilled in data storytelling, business analytics, and cross-functional collaboration.</p>
 </div>
-
 <div class="whatsapp-box">
-
 <h3>Education</h3>
-
 <ul>
 <li>B-Tech Electrical Engineering – CPUT (2013)</li>
 <li>Master of Data Science – NUST (2024–2025)</li>
 </ul>
-
 </div>
-
 </div>
-
 </div>
-
 </section>
 
-<!-- ================= SKILLS ================= -->
-
+<!-- SKILLS -->
 <section id="skills">
-
 <div class="section-box">
-
 <h2>Proficiencies</h2>
-
 <div class="skills">
 
-<!-- Programming -->
-
 <div class="skill-card">
-
-<div class="skill-icons">
 <img src="icons/python.png">
-<img src="icons/julia.png">
-<img src="icons/c.png">
-<img src="icons/sql.png">
-<img src="icons/scala.png">
-</div>
-
 <h4>Programming</h4>
-
-<p>
-Python, Julia, C, SQL, Scala for analytics and automation.
-</p>
-
+<p>Python, Julia, C, SQL, Scala for analytics and automation.</p>
 </div>
 
-<!-- Big Data -->
-
 <div class="skill-card">
-
-<img src="icons/bigdata.png" width="60">
-
+<img src="icons/bigdata.png">
 <h4>Big Data</h4>
-
-<p>
-Hadoop, Kafka, Spark, MapReduce, Batch Processing.
-</p>
-
+<p>Hadoop, Kafka, Spark for large-scale processing, Map-reduce and Batch Processing.</p>
 </div>
 
-<!-- ML -->
-
 <div class="skill-card">
-
-<img src="icons/ml.png" width="60">
-
+<img src="icons/ml.png">
 <h4>Machine Learning</h4>
-
-<p>
-AI modeling, optimization, tuning, and deployment.
-</p>
-
+<p>AI modeling, optimization, tuning, and deployment.</p>
 </div>
-
-<!-- Visualization -->
 
 <div class="skill-card">
-
-<img src="icons/viz.png" width="60">
-
+<img src="icons/viz.png">
 <h4>Visualization</h4>
-
-<p>
-Tableau, Grafana, Dashboards & Reports.
-</p>
-
+<p>Tableau, Grafana, dashboards & reports.</p>
 </div>
 
-</div>
 
 </div>
-
+</div>
 </section>
 
-<!-- ================= EXPERIENCE ================= -->
-
+<!-- EXPERIENCE -->
 <section id="experience">
-
 <div class="section-box">
-
 <h2>Professional Experience</h2>
-
 <ul class="exp-list">
-
-<li>Managed data pipelines and architecture</li>
-<li>Established data validation processes</li>
-<li>Developed dashboards and reports</li>
-<li>Automated reporting workflows</li>
-<li>Delivered business insights</li>
-<li>Cross-team collaboration</li>
-
+<li>Managed data pipelines and architecture.</li>
+<li>Established data collection and validation processes.</li>
+<li>Developed dashboards and reports.</li>
+<li>Delivered actionable business insights.</li>
+<li>Automated reporting workflows.</li>
+<li>Improved data accuracy and adoption.</li>
+<li>Collaborated with cross-functional teams.</li>
 </ul>
-
 </div>
-
 </section>
 
-<!-- ================= PROJECTS ================= -->
-
+<!-- PROJECTS -->
 <section id="projects">
-
 <div class="section-box">
-
 <h2>Key Projects</h2>
 
-<!-- Project 1 -->
-
 <div class="project">
-
-<h3>Cape Town Rainfall Dashboard</h3>
-
+<h3>1. Cape Town Rainfall Dashboard</h3>
 <p>Rainfall pattern visualization and analysis.</p>
-
 <div class="project-grid">
-
-<div class="img-box">
-<img src="projects/rain1.jpg">
+<div class="img-box"> /assets/images/rain1.png</div>
+<div class="img-box"> /assets/images/rain2.png</div>
+<div class="img-box"> /assets/images/rain3.png</div>
 </div>
-
-<div class="img-box">
-<img src="projects/rain2.jpg">
 </div>
-
-<div class="img-box">
-<img src="projects/rain3.jpg">
-</div>
-
-</div>
-
-</div>
-
-<!-- Project 2 -->
 
 <div class="project">
-
-<h3>AI Hair Assistant</h3>
-
+<h3>2. AI Hair Assistant</h3>
 <p>AI-driven hair care recommendation system.</p>
-
 <div class="project-grid">
-
-<div class="img-box">
-<img src="projects/hair1.jpg">
+<div class="img-box">assets/images/hair1.png</div>
+<div class="img-box">assets/images/hair2.png</div>
+<div class="img-box">assets/images/hair3.png</div>
 </div>
-
-<div class="img-box">
-<img src="projects/hair2.jpg">
-</div>
-
-<div class="img-box">
-<img src="projects/hair3.jpg">
-</div>
-
-</div>
-
-</div>
-
-<!-- Project 3 -->
+</div>~
 
 <div class="project">
-
-<h3>Hair Survey & EDA</h3>
-
+<h3>3. Hair Survey & EDA</h3>
 <p>Exploratory analysis and classification.</p>
-
 <div class="project-grid">
-
-<div class="img-box">
-<img src="projects/eda1.jpg">
+<div class="img-box">assets/images/eda1.png</div>
+<div class="img-box">assets/images/eda2.png</div>
+<div class="img-box">assets/images/eda3.png</div>
+</div>
 </div>
 
-<div class="img-box">
-<img src="projects/eda2.jpg">
-</div>
-
-<div class="img-box">
-<img src="projects/eda3.jpg">
-</div>
-
-</div>
-
+<h3>Research Findings: Hair Loss & Condition Analysis</h3>
+<p>Early-stage breakage was most common. Black/African participants showed higher structural compromise.</p>
+<p>Mixed-race participants demonstrated the highest damage levels.</p>
+<div class="project-grid">
+<div class="img-box">assets/images/research1.png</div>
+<div class="img-box">assets/images/research2.png</div>
+<div class="img-box">assets/images/research3.png</div>
 </div>
 
 </div>
-
 </section>
 
-<!-- ================= CONTACT ================= -->
-
+<!-- CONTACT -->
 <section id="contact">
-
 <div class="section-box">
-
 <h2>Contact Me</h2>
-
 <div class="contact-grid">
 
-<!-- Email -->
-
 <div>
-
 <h3>Email Me</h3>
-
-<form action="mailto:psndalipo@gmail.com" method="post">
-
+<form action="mailto:psndalipo@gmail.com" method="post" enctype="text/plain">
 <input type="text" placeholder="Your Name" required>
-
 <input type="email" placeholder="Your Email" required>
-
 <textarea rows="5" placeholder="Your Message"></textarea>
-
 <button type="submit">Send Email</button>
-
 </form>
-
 </div>
 
+
+<!-- <div class="whatsapp-box">
+  <h3>WhatsApp</h3>
+  <p>You can also contact me directly via WhatsApp:</p>
+    
+  <a href="https://wa.me/264814407873" target="_blank">
+    <button>Chat on WhatsApp</button>
+  </a>
+</div> -->
+    
 <!-- WhatsApp -->
-
 <div class="whatsapp-box">
-
 <h3>WhatsApp</h3>
-
 <p>Contact me directly:</p>
-
 <a href="https://wa.me/264814407873" target="_blank">
-
 <button class="whatsapp-btn">
 Chat on WhatsApp
 </button>
 
-</a>
 
 </div>
-
 </div>
-
-</div>
-
 </section>
 
 </div>
 
-<!-- ================= FOOTER ================= -->
-
+<!-- FOOTER -->
 <footer>
-
 <p>© 2026 Paulina Haixula | Data Science Portfolio</p>
-
 </footer>
 
 </body>
