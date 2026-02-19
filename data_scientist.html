@@ -99,45 +99,35 @@ section{
 }
 
 /* PROFICIENCIES */
-.skills{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
-}
-
-.skill-icons{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
-}
-
-.skill-icons img{
-    width: 35px;
-    height: 35px;
-}
-
-.skill-footer{
-    margin-top:15px;
+.skill-list{
     display:flex;
     flex-wrap:wrap;
-    gap:8px;
+    gap:10px;
+    margin-top:12px;
     justify-content:center;
 }
 
-.skill-footer button{
-    background:#f4f2ef;
-    border:1px solid #dbcfc3;
+.skill-item{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    background:#f7f6f4;
     padding:6px 12px;
-    border-radius:20px;
-    font-size:0.85em;
-    cursor:default;
-    transition:0.2s ease;
+    border-radius: 20px;
+    font-size:0.92em;
+    border:1px solid #ddd;
+    transition:0.2s;
 }
 
-.skill-footer button:hover{
-    background:#dbcfc3;
+.skill-item img{
+    width:18px;
+    height:18px;
+}
+
+.skill-item:hover{
+    background:#e8e6e2;
+    transform:translateY(-2px);
+    border-color:#ccc;
 }
 
 /* EXPERIENCE */
@@ -283,27 +273,45 @@ footer{
 <div class="skills">
 
 <div class="skill-card">
-<img src="icons/python.png">
-<h4>Programming</h4>
-<p>Python, Julia, C, SQL, Scala for analytics and automation.</p>
+  <h4>Programming</h4>
+  <div class="skill-list">
+    <span class="skill-item"><img src="assets/logos/python.png" alt="Python"> Python</span>
+    <span class="skill-item"><img src="assets/logos/julia.png" alt="Julia"> Julia</span>
+    <span class="skill-item"><img src="assets/logos/c.jpg" alt="C"> C</span>
+    <span class="skill-item"><img src="assets/logos/sql.png" alt="SQL"> SQL</span>
+    <span class="skill-item"><img src="assets/logos/scala.png" alt="Scala"> Scala</span>
+  </div>
+</div>
+
+
+<div class="skill-card">
+  <h4>Big Data</h4>
+  <div class="skill-list">
+    <span class="skill-item"><img src="assets/logos/hadoop.png" alt="Hadoop"> Hadoop</span>
+    <span class="skill-item"><img src="assets/logos/kafka.png" alt="Kafka"> Kafka</span>
+    <span class="skill-item"><img src="assets/logos/spark.png" alt="Spark"> Spark</span>
+  </div>
 </div>
 
 <div class="skill-card">
-<img src="icons/bigdata.png">
-<h4>Big Data</h4>
-<p>Hadoop, Kafka, Spark for large-scale processing, Map-reduce and Batch Processing.</p>
+  <h4>Machine Learning</h4>
+  <div class="skill-list">
+    <span class="skill-item">
+      <img src="assets/logos/tensorflow.png" alt="TensorFlow"> TensorFlow </span>
+    <span class="skill-item"> <img src="assets/logos/pytorch.png" alt="PyTorch"> PyTorch </span>
+    <span class="skill-item"> <img src="assets/logos/scikit.png" alt="Scikit Learn"> Scikit-Learn </span>
+    <span class="skill-item"> <img src="assets/logos/opencv.png" alt="OpenCV"> OpenCV </span>
+  </div>
 </div>
 
 <div class="skill-card">
-<img src="icons/ml.png">
-<h4>Machine Learning</h4>
-<p>AI modeling, optimization, tuning, and deployment.</p>
-</div>
-
-<div class="skill-card">
-<img src="icons/viz.png">
-<h4>Visualization</h4>
-<p>Tableau, Grafana, dashboards & reports.</p>
+  <h4>Visualization</h4>
+  <div class="skill-list">
+    <span class="skill-item"><img src="assets/logos/tableau.png" alt="Tableau"> Tableau</span>
+    <span class="skill-item"><img src="assets/logos/grafana.png" alt="Grafana"> Grafana</span>
+    <span class="skill-item"><img src="assets/logos/powerbi.png" alt="Power BI"> Power BI</span>
+    <span class="skill-item"><img src="assets/logos/matplotlib.png" alt="Matplotlib"> Matplotlib</span>
+  </div>
 </div>
 
 
