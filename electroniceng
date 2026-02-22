@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paulina Haixula | Electronic Engineer</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="icon" href="./assets/logos/logo.jpg">
+</head>
+
+<body>
+
+<header>
+  <nav id="nav">
+    <div class="header">
+      <div class="logo">
+        <img src="./assets/logo.png" alt="Paulina Logo">
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#proficiencies">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- PROFILE -->
+
+<section id="profile">
+
+  <div class="section_pic_container">
+    <img src="./assets/profile2.png" alt="Paulina Profile">
+  </div>
+
+  <div class="section_text">
+    <p class="section_text_p1">Hi, I am</p>
+
+    <h1 class="title_1"> Paulina Haixula </h1>
+    <p class="section_text_p1">a</p>
+
+    <p class="section_text_p2">
+      Electronic Engineer | AI & ML Engineer
+    </p>
+
+    <div class="btn_container">
+      <button class="btn_color"
+        onclick="location.href='#contact'">
+        Contact Me
+      </button>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="section_text_p1">
+    Get To Know More
+  </p>
+
+  <h1 class="title_2">
+    About Me
+  </h1>
+
+  <div class="text_container">
+    <p>
+      I’m a Design Engineer with over 11 years of experience in electronics,
+      automation, and data analytics. I specialize in automating systems, 
+      developing firmware and software, and using data to improve performance and efficiency.
+      I hold a BTech in Electrical Engineering, a Master’s in Industrial Engineering, and I’m
+      expected to graduate in April/May 2026 for Master’s in Data Science. I’m passionate about 
+    applying AI, machine learning, and Industry 4.0 technologies to solve real-world challenges 
+    and support digital transformation across operations.  I enjoy working with cross-functional teams
+and constantly seek innovative ways to bridge the gap between engineering and digital transformation.
+    </p>
+  </div>
+</section>
+
+
+<!-- PROFICIENCIES -->
+<section id="proficiencies">
+  <p class="section_text_p1">
+    What I Do
+  </p>
+
+  <h1 class="title_2">
+    Proficiencies
+  </h1>
+
+  <div class="article_container">
+
+<article>
+  <img src="./assets/logos/project_management.png" class="icon">
+  <div>
+    <h3>Project Management</h3>
+    <p>
+      Lead multidisciplinary engineering projects from design to commissioning,
+      managing budgets, timelines, procurement and stakeholder coordination
+      to deliver high-quality telecom and electronic solutions.
+    </p>
+  </div>
+</article>
+
+
+<article>
+  <img src="./assets/logos/troubleshooting.png" class="icon">
+  <div>
+    <h3>Troubleshooting & System Repair</h3>
+    <p>
+      Advanced fault diagnosis, troubleshooting and repair of
+      telecommunication systems, electronic equipment and
+      printed circuit boards ensuring operational reliability.
+    </p>
+  </div>
+</article>
+
+
+<article>
+  <img src="./assets/logos/cad_design.png" class="icon">
+  <div>
+    <h3>CAD & Technical Design</h3>
+    <p>
+      Engineering schematic and system design using AutoCAD
+      and MS Visio for telecom infrastructure, system layouts
+      and technical documentation.
+    </p>
+  </div>
+</article>
+
+
+<article>
+  <img src="./assets/logos/pcb_design.png" class="icon">
+  <div>
+    <h3>PCB Design & Electronics Development</h3>
+    <p>
+      PCB schematic capture, layout and electronic system
+      development using Mentor Graphics and KiCAD,
+      compliant with MIL-STD, ETSI and ISO quality standards.
+    </p>
+  </div>
+</article>
+
+
+<article>
+  <img src="./assets/logos/programming.png" class="icon">
+  <div>
+    <h3>Programming, Test Automation & System Development</h3>
+    <p>
+      Development of automated testing systems and engineering
+      solutions using Arduino, Python, C, MATLAB, LabVIEW,
+      TestStand and MySQL databases.
+    </p>
+  </div>
+</article>
+
+
+<article>
+  <img src="./assets/logos/testing_commissioning.png" class="icon">
+  <div>
+    <h3>Testing & Commissioning</h3>
+    <p>
+      Factory Acceptance Testing (FAT), system validation,
+      commissioning and compliance verification for telecom
+      equipment and electronic systems.
+    </p>
+  </div>
+</article>
+
+
+<article>
+  <img src="./assets/logos/data_analytics.png" class="icon">
+  <div>
+    <h3>Data Analytics & AI Engineering</h3>
+    <p>
+      Apply data analytics, machine learning and artificial
+      intelligence techniques for automation, anomaly detection
+      and process optimization in smart engineering systems.
+    </p>
+  </div>
+</article>
+
+
+<article>
+  <img src="./assets/logos/process_engineering.png" class="icon">
+  <div>
+    <h3>Process Engineering & Lean Optimization</h3>
+    <p>
+      Apply Lean Six Sigma principles to improve workflows,
+      reduce production costs and enhance operational efficiency
+      across engineering processes.
+    </p>
+  </div>
+</article>
+
+
+<article>
+  <img src="./assets/logos/training.png" class="icon">
+  <div>
+    <h3>Training & Knowledge Transfer</h3>
+    <p>
+      Deliver technical training, mentorship and skill transfer
+      programs while developing operational manuals and
+      supporting engineering education initiatives.
+    </p>
+  </div>
+</article>
+
+
+<article>
+  <img src="./assets/logos/webdevelopment.png" class="icon">
+  <div>
+    <h3>Web & Database Development</h3>
+    <p>
+      Develop engineering dashboards and web systems using
+      Python frameworks, databases and modern web technologies
+      for monitoring and reporting solutions.
+    </p>
+  </div>
+</article>
+
+<article>
+  <img src="./assets/logos/automation_testing.png" class="icon">
+  <div>
+    <h3>Automated Test Equipment (ATE) & Bed-of-Nails Systems</h3>
+    <p>
+      Research, design and commissioning of automated electronic
+      test equipment including Bed-of-Nails PCB testing platforms.
+      Develop hardware interfaces, fixtures and validation procedures
+      using LabVIEW and TestStand to support production testing,
+      fault diagnosis, quality compliance and long-term system
+      sustainability.
+    </p>
+  </div>
+</article>
+</div>
+</section>
+
+
+<section id="projects">
+
+<h2>Selected AI, Machine Learning and Data Science Projects</h2>
+
+<hr>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+<div class="section-box">
+<h2>Key Projects</h2>
+
+<div class="project">
+  <h3>1. Cape Town Rainfall Dashboard</h3>
+<p>
+Interactive rainfall analysis dashboard visualizing historical precipitation
+patterns and seasonal climate trends using exploratory data analysis and
+data visualization techniques.
+</p>
+
+<p>
+<b>Experience Learned:</b> Strengthened skills in data cleaning,
+time-series analysis, visualization storytelling, and communicating
+environmental insights using dashboards.
+</p>
+<div class="project-grid">
+    <div class="img-box"><img src="assets/images/rain1.png" alt="Rainfall Dashboard 1"></div>
+    <div class="img-box"><img src="assets/images/rain2.png" alt="Rainfall Dashboard 2"></div>
+    <div class="img-box"><img src="assets/images/rain3.png" alt="Rainfall Dashboard 3"></div>
+  </div>
+  <div class="skills-box">
+
+<span>Python</span>
+<span>Pandas</span>
+<span>Data Visualization</span>
+<span>Time Series Analysis</span>
+<span>EDA</span>
+<span>Dashboard Design</span>
+
+</div>
+</div>
+
+<div class="project">
+  <h3>2. AI Hair Assistant</h3>
+  <p>AI-driven hair care recommendation system.</p>
+  <div class="project-grid">
+    <div class="img-box"><img src="assets/images/hair1.png" alt="AI Hair Assistant 1"></div>
+    <div class="img-box"><img src="assets/images/hair2.png" alt="AI Hair Assistant 2"></div>
+    <div class="img-box"><img src="assets/images/hair3.png" alt="AI Hair Assistant 3"></div>
+  </div>
+</div>
+
+<div class="project">
+  <h3>3. Hair Survey & EDA</h3>
+  <p>Exploratory analysis and classification.</p>
+  <div class="project-grid">
+    <div class="img-box"><img src="assets/images/hair4.png" alt="Hair Survey EDA 1"></div>
+    <div class="img-box"><img src="assets/images/hair5.png" alt="Hair Survey EDA 2"></div>
+    <div class="img-box"><img src="assets/images/hair6.png" alt="Hair Survey EDA 3"></div>
+  </div>
+</div>
+
+<div class="project">
+  <h3>Research Findings: Hair Loss & Condition Analysis</h3>
+  <p>Early-stage breakage was most common. Black/African participants showed higher structural compromise.</p>
+  <p>Mixed-race participants demonstrated the highest damage levels.</p>
+  <div class="project-grid">
+    <div class="img-box"><img src="assets/images/research1.png" alt="Research Finding 1"></div>
+    <div class="img-box"><img src="assets/images/research2.png" alt="Research Finding 2"></div>
+    <div class="img-box"><img src="assets/images/research3.png" alt="Research Finding 3"></div>
+  </div>
+</div>
+</div>
+</section>
+
+  
+<!-- ================= PROJECT 1 ================= -->
+
+<!-- ================= PROJECT 2 ================= -->
+
+
+<h3>AI Hair Care Recommendation Assistant</h3>
+
+<p>
+AI recommendation system designed to provide personalized herbal hair care
+advice based on ingredient properties, hair conditions, and user preferences
+using NLP and content-based recommendation techniques.
+</p>
+
+<p>
+<b>Experience Learned:</b> Developed API deployment skills, NLP feature
+engineering, recommendation model development, and real-world dataset
+integration for personalized AI services.
+</p>
+
+
+<div class="project-grid">
+
+<img src="assets/images/hair1.png">
+<img src="assets/images/hair2.png">
+<img src="assets/images/hair3.png">
+
+</div>
+
+
+<div class="skills-box">
+
+<span>FastAPI</span>
+<span>NLP</span>
+<span>Recommendation Systems</span>
+<span>Pandas</span>
+<span>Scikit-Learn</span>
+<span>API Development</span>
+
+</div>
+
+<hr>
+
+
+
+<!-- ================= PROJECT 3 ================= -->
+
+
+<h3>Hair Survey Analysis & Exploratory Data Analysis</h3>
+
+<p>
+Survey-based hair condition research involving statistical analysis,
+classification modelling, and demographic comparisons to understand
+hair damage patterns and contributing factors.
+</p>
+
+<p>
+<b>Experience Learned:</b> Improved statistical reasoning, hypothesis
+testing, feature engineering, and communicating research findings through
+data storytelling and visualization.
+</p>
+
+
+<div class="project-grid">
+
+<img src="assets/images/hair4.png">
+<img src="assets/images/hair5.png">
+<img src="assets/images/hair6.png">
+
+</div>
+
+
+<div class="skills-box">
+
+<span>Exploratory Data Analysis</span>
+<span>Statistics</span>
+<span>Data Cleaning</span>
+<span>Python</span>
+<span>Visualization</span>
+<span>Classification Models</span>
+
+</div>
+
+<hr>
+
+
+
+<!-- ================= PROJECT 4 ================= -->
+
+
+<h3>Research Findings: Hair Loss & Condition Analysis</h3>
+
+<p>
+Research-driven analysis identifying structural hair damage trends across
+different demographic groups. Early-stage breakage was most common, with
+higher structural compromise observed among African hair types.
+</p>
+
+<p>
+<b>Experience Learned:</b> Developed research methodology skills,
+scientific reporting, comparative demographic analysis, and interpretation
+of biological data patterns.
+</p>
+
+
+<div class="project-grid">
+
+<img src="assets/images/research1.png">
+<img src="assets/images/research2.png">
+<img src="assets/images/research3.png">
+
+</div>
+
+
+<div class="skills-box">
+
+<span>Research Analysis</span>
+<span>Scientific Reporting</span>
+<span>Statistical Analysis</span>
+<span>Data Interpretation</span>
+<span>Visualization</span>
+
+</div>
+
+<hr>
+
+
+
+<!-- ================= PROJECT 5 ================= -->
+
+
+<h3>Kafka Real-Time Data Streaming System</h3>
+
+<p>
+Developed a distributed real-time data streaming pipeline using Apache Kafka
+to enable scalable communication between producers and consumers for
+high-throughput data processing.
+</p>
+
+<p>
+<b>Experience Learned:</b> Gained experience in distributed systems,
+event-driven architecture, message queuing, and real-time data ingestion
+design for scalable analytics workflows.
+</p>
+
+
+<div class="skills-box">
+
+<span>Apache Kafka</span>
+<span>Distributed Systems</span>
+<span>Data Streaming</span>
+<span>Event-Driven Architecture</span>
+<span>Python</span>
+
+</div>
+
+<hr>
+
+</section>
+
+  
+<!-- CONTACT -->
+<section id="contact">
+<div class="section-box">
+<h2>Contact Me</h2>
+<div class="contact-grid">
+
+<div>
+<h3>Email Me</h3>
+<form action="mailto:psndalipo@gmail.com" method="post" enctype="text/plain">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Email</button>
+</form>
+</div>
+
+
+<!-- <div class="whatsapp-box">
+  <h3>WhatsApp</h3>
+  <p>You can also contact me directly via WhatsApp:</p>
+    
+  <a href="https://wa.me/264814407873" target="_blank">
+    <button>Chat on WhatsApp</button>
+  </a>
+</div> -->
+    
+<!-- WhatsApp -->
+<div class="whatsapp-box">
+<h3>WhatsApp</h3>
+<p>Contact me directly:</p>
+<a href="https://wa.me/264814407873" target="_blank">
+<button class="whatsapp-btn">
+Chat on WhatsApp
+</button>
+
+
+</div>
+</div>
+</section>
+
+  
+</main>
+
+<footer>
+  <p>© 2026 Paulina Haixula | Portfolio</p>
+</footer>
+
+</body>
+</html>
