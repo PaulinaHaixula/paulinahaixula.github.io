@@ -180,7 +180,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 2rem;
     height: 85vh;
 }
 
@@ -267,6 +267,13 @@ section {
     color: #555;
     line-height: 1.6;
     text-align: left;
+}
+
+/* CONTACT */
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
 }
 
 /* PROFICIENCIES SECTION */
