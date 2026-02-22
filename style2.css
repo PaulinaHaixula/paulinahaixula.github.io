@@ -484,3 +484,71 @@ footer p::before {
     font-size: 1.2rem;
     margin-right: 0.5rem;
 }
+
+
+.project-grid{
+
+display:flex;
+gap:15px;
+margin:15px 0;
+
+}
+
+.project-grid img{
+
+width:200px;
+border-radius:8px;
+box-shadow:0 4px 8px rgba(0,0,0,0.15);
+
+}
+
+
+.skills-box{
+
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+margin:10px 0 20px;
+
+}
+
+
+.skills-box span{
+
+background:#eef2f7;
+
+padding:6px 12px;
+
+border-radius:6px;
+
+font-size:13px;
+
+font-weight:500;
+
+border:1px solid #d0d7de;
+
+}
+
+.section-box{
+    background:#ffffff;
+    border:1px solid #eee;
+    border-radius:14px;
+    padding:35px;
+}
+
+.whatsapp-box{
+    background:#f8f6f4;
+    padding:25px;
+    border-radius:12px;
+    border:1px solid #ddd;
+}
+
+.whatsapp-btn{
+    background:#25D366;
+    border:none;
+    padding:12px 25px;
+    border-radius:6px;
+    font-weight:600;
+    cursor:pointer;
+    color:white;
+}
