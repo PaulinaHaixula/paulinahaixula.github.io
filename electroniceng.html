@@ -497,14 +497,36 @@ prototype validation and production-ready engineering documentation.
 <h2>Contact Me</h2>
 <div class="contact-grid">
 
-<div>
+<div class="email-box">
+
 <h3>Email Me</h3>
-<form action="mailto:psndalipo@gmail.com" method="post" enctype="text/plain">
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea rows="5" placeholder="Your Message"></textarea>
-<button type="submit">Send Email</button>
+
+<form action="mailto:psndalipo@gmail.com"
+      method="post"
+      enctype="text/plain"
+      class="email-form">
+
+<div class="row">
+
+<input type="text" name="name"
+placeholder="Your Name" required>
+
+<input type="email" name="email"
+placeholder="Your Email" required>
+
+</div>
+
+<textarea name="message"
+rows="6"
+placeholder="Your Message"
+required></textarea>
+
+<button type="submit">
+Send Email
+</button>
+
 </form>
+
 </div>
 
     
